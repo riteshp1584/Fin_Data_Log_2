@@ -1,7 +1,7 @@
 📊 Fin_Data_Log_2 Repository
 A collection of Python scripts designed to interact with the Fyers API for fetching live Indian market data. This repository will progressively expand to cover multiple workflows for stock market analysis, OHLCV data retrieval, and other financial insights.
 
-Fin_Data_Log_2/
+## Fin_Data_Log_2/
 │
 ├── scripts/                  # Core scripts for Fyers API integration
 │   ├── fyers_data_fetch.py   # Example script to pull OHLCV and stock details
