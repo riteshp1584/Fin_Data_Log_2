@@ -23,15 +23,15 @@ A collection of Python scripts designed to interact with the Fyers API for fetch
 
 ## 🚀 Features ##
 
-Fyers API Integration: Connects directly to Fyers to fetch fresh market data.
+- Fyers API Integration: Connects directly to Fyers to fetch fresh market data.
 
-OHLCV Data Retrieval: Access open, high, low, close, and volume values for stocks.
+- OHLCV Data Retrieval: Access open, high, low, close, and volume values for stocks.
 
-Comprehensive Market Details: Scripts designed to expand into derivatives, indices, and other instruments.
+- Comprehensive Market Details: Scripts designed to expand into derivatives, indices, and other instruments.
 
-Data Export: Save results into CSV/Excel for further analysis.
+- Data Export: Save results into CSV/Excel for further analysis.
 
-Scalable Design: Future scripts will cover broader financial workflows.
+- Scalable Design: Future scripts will cover broader financial workflows.
 
 ## ⚙️ Requirements ##
 
