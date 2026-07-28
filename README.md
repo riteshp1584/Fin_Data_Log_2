@@ -33,52 +33,55 @@ Data Export: Save results into CSV/Excel for further analysis.
 
 Scalable Design: Future scripts will cover broader financial workflows.
 
-⚙️ Requirements
+## ⚙️ Requirements ##
+
 Python 3.9+
 
-Common libraries:
+- Common libraries:
 
-requests
+- `requests`
 
-pandas
+- `pandas`
 
-numpy
+- `numpy`
 
-openpyxl
+- `openpyxl`
 
-matplotlib (optional, for visualization)
+- `matplotlib` (optional, for visualization)
 
-▶️ Usage
-Clone the repository:
+## ▶️ Usage ##
+1. Clone the repository:
 
 git clone https://github.com/riteshp1584/Fin_Data_Log_2.git
 cd Fin_Data_Log_2
 
-Run a script:
+2. Run a script:
 
 python scripts/fyers_data_fetch.py
 
 Explore datasets in the data/ folder or extend scripts for custom workflows.
 
-📖 Example Workflow
-Authenticate with Fyers API using your credentials.
+## 📖 Example Workflow ##
+- Authenticate with Fyers API using your credentials.
 
-Fetch OHLCV data for selected stocks.
+- Fetch OHLCV data for selected stocks.
 
-Store results in structured CSV/Excel files.
+- Store results in structured CSV/Excel files.
 
-Use notebooks for visualization and trend analysis.
+- Use notebooks for visualization and trend analysis.
 
-🛠️ Contribution
-Fork the repo
+## 🛠️ Contribution
 
-Add new scripts or notebooks
+- Fork the repo
 
-Submit a pull request with clear documentation
+- Add new scripts or notebooks
 
-📌 Notes
-Ensure you have valid Fyers API credentials before running scripts.
+- Submit a pull request with clear documentation
 
-Data fetched is live market data; handle responsibly for trading or research.
+## 📌 Notes
+
+-  Ensure you have valid Fyers API credentials before running scripts.
+
+- Data fetched is live market data; handle responsibly for trading or research.
 
 More scripts will be added to make this repo a comprehensive toolkit for Indian market data analysis.
