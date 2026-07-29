@@ -9,7 +9,7 @@ load_dotenv()
 
 # Define your Fyers API credentials
 client_id = os.getenv("FYERS_CLIENT_ID")  # Replace with your client ID
-secret_key = "**************"  # Check original code script in PyCharm, hidden here for privacy purposes
+secret_key = os.getenv("FYERS_SECRET_KEY") # in .env file
 redirect_uri = "http://127.0.0.1:5000/callback"  # Replace with your redirect URI
 response_type = "code"
 grant_type = "authorization_code"
@@ -17,7 +17,7 @@ grant_type = "authorization_code"
 # The authorization code received from Fyers after the user grants access
 # Copy and Paste Every Run (generated from the output of Fyers_Work_1.py)
 # be careful while copying end comma
-auth_code = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfaWQiOiIzOUVHMkNMUEtEIiwidXVpZCI6ImJjYjVmNmFiMjg4MjQ2NDg5NzY2ZmFhMmM0MGI4YzIwIiwiaXBBZGRyIjoiIiwibm9uY2UiOiIiLCJzY29wZSI6IiIsImRpc3BsYXlfbmFtZSI6IllQMDYzODAiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJkMDY4YzRmZDQzYzVkNDZkMzVhYWQ2NmY2ZGMzYThjNTA2ZDBkNDY2NzI2YmVmYjAwYzdkMTliYSIsImlzRGRwaUVuYWJsZWQiOiJOIiwiaXNNdGZFbmFibGVkIjoiTiIsImF1ZCI6IltcImQ6MVwiLFwiZDoyXCIsXCJ4OjBcIixcIng6MVwiXSIsImV4cCI6MTc4NTI1NTk4NywiaWF0IjoxNzg1MjI1OTg3LCJpc3MiOiJhcGkubG9naW4uZnllcnMuaW4iLCJuYmYiOjE3ODUyMjU5ODcsInN1YiI6ImF1dGhfY29kZSJ9.NTYaKA-M1d4eHhOwiR4EpOlmYuEqDfle8U4jDBFoNrc"
+auth_code = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfaWQiOiIzOUVHMkNMUEtEIiwidXVpZCI6ImI2MzI5ZDcxMzFkMDRhYzc4Yzc4M2Q2MTE4YjU0MjMzIiwiaXBBZGRyIjoiIiwibm9uY2UiOiIiLCJzY29wZSI6IiIsImRpc3BsYXlfbmFtZSI6IllQMDYzODAiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJhZjg0NDE3Yzk1NzQ1ZjE0MzdiMTI2YTIwZDU5YjlkY2QyZWY0MDg3NTllYzhjYjIxNWZjYjMzMSIsImlzRGRwaUVuYWJsZWQiOiJOIiwiaXNNdGZFbmFibGVkIjoiTiIsImF1ZCI6IltcImQ6MVwiLFwiZDoyXCIsXCJ4OjBcIixcIng6MVwiXSIsImV4cCI6MTc4NTM0MDg3MiwiaWF0IjoxNzg1MzEwODcyLCJpc3MiOiJhcGkubG9naW4uZnllcnMuaW4iLCJuYmYiOjE3ODUzMTA4NzIsInN1YiI6ImF1dGhfY29kZSJ9.vRlc6KS2HGXOTI1Gdo9CEDIhM8WJrwQaAj2r-wjJ6KQ"
 
 # Create a session object to handle the Fyers API authentication and token generation
 session = fyersModel.SessionModel(
