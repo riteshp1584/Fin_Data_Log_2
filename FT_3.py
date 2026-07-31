@@ -1,0 +1,16 @@
+from fyers_apiv3 import fyersModel
+import json
+
+client_id = "XC4XXXXM-100"
+# Copy and Paste Every Run (generated from the output of Fyers_Work_2.py)
+
+access_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiZDoxIiwiZDoyIiwieDowIiwieDoxIl0sImF0X2hhc2giOiJnQUFBQUFCcWFGWTVJZnlzY3BiLTRvY3RaUTBnNF84NmktUmUtdEhTb1FUaXNtR1c3di1XMExlSU1Tcnh4OVJ5THdTdmtxblFoY0pFNzdZTU1wTFJ0ZVpOZ0pOLW16N0VoNGs5bEdVdWZmRjBpdHR4blFkUE9QTT0iLCJkaXNwbGF5X25hbWUiOiIiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJkMDY4YzRmZDQzYzVkNDZkMzVhYWQ2NmY2ZGMzYThjNTA2ZDBkNDY2NzI2YmVmYjAwYzdkMTliYSIsImlzRGRwaUVuYWJsZWQiOiJOIiwiaXNNdGZFbmFibGVkIjoiTiIsImZ5X2lkIjoiWVAwNjM4MCIsImFwcFR5cGUiOjEwMCwiZXhwIjoxNzg1Mjg1MDAwLCJpYXQiOjE3ODUyMjI3MTMsImlzcyI6ImFwaS5meWVycy5pbiIsIm5iZiI6MTc4NTIyMjcxMywic3ViIjoiYWNjZXNzX3Rva2VuIn0.Cse5WS-um7M9wA7qO7wbh4x2Y7yiT2GZLQ-ZQI6r_vA"
+
+# Initialize the FyersModel instance with your client_id, access_token, and enable async mode
+fyers = fyersModel.FyersModel(client_id=client_id, token=access_token, is_async=False, log_path="")
+
+response = fyers.market_status()
+# print(response)
+
+pretty_json = json.dumps(response, indent=4)
+print(pretty_json)
